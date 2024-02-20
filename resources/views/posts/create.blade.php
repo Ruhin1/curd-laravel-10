@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tambah Data Post - SantriKoding.com</title>
+    <title>Data Post</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body style="background: lightgray">
@@ -19,7 +19,7 @@
                             @csrf
 
                             <div class="form-group">
-                                <label class="font-weight-bold">GAMBAR</label>
+                                <label class="font-weight-bold">IMAGE</label>
                                 <input type="file" class="form-control @error('image') is-invalid @enderror" name="image">
                             
                                 <!-- error message untuk title -->
@@ -31,8 +31,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="font-weight-bold">JUDUL</label>
-                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" placeholder="Masukkan Judul Post">
+                                <label class="font-weight-bold">TITLE</label>
+                                <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') }}" placeholder="Enter Post Title">
                             
                                 <!-- error message untuk title -->
                                 @error('title')
@@ -43,8 +43,8 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="font-weight-bold">KONTEN</label>
-                                <textarea class="form-control @error('content') is-invalid @enderror" name="content" rows="5" placeholder="Masukkan Konten Post">{{ old('content') }}</textarea>
+                                <label class="font-weight-bold">CONTENT</label>
+                                <textarea class="form-control @error('content') is-invalid @enderror" name="content" rows="5" placeholder="Enter Post Content">{{ old('content') }}</textarea>
                             
                                 <!-- error message untuk content -->
                                 @error('content')
@@ -54,7 +54,7 @@
                                 @enderror
                             </div>
 
-                            <button type="submit" class="btn btn-md btn-primary">SIMPAN</button>
+                            <button type="submit" class="btn btn-md btn-primary">SUBMIT</button>
                             <button type="reset" class="btn btn-md btn-warning">RESET</button>
 
                         </form> 
