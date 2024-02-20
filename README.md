@@ -1,66 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Curd Application Project
+### Made By [***Tonmoy Islam***](https://github.com/Ruhin1)
+This is a Curd Application Project Made with Laravel 10,
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## What can you do in this website
+- Post create update show delate functionlaty. 
+## Dependencies
+- [Composer v2.2.3^](https://getcomposer.org/download/)
+- [Laravel v10.x](https://laravel.com/docs/10.x)
+- [Bootstap v5.1.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
+- [Bootstrap v5.1 Examples](https://getbootstrap.com/docs/5.1/examples/) (Used Some of these as boiler plate)
 
-## About Laravel
+- [JQuery v3.6.0](https://releases.jquery.com/)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- [CKEditor v4](https://ckeditor.com/docs/ckeditor4/latest/guide/index.html)
+- And Familiarity with Laravel, Can't remember anything else...
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## What needs to be installed...
+- [Composer v2.2.3^](https://getcomposer.org/download/)
+- [Git](https://git-scm.com/downloads)
+- [Laravel v10.x](https://laravel.com/docs/8.x#the-laravel-installer)
+- [Wamp](https://www.wampserver.com/en/) (I used Wamp you can use Similar ones)
+- Can't remember anything else...
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Steps to Install
+### Clone The GitHub Repo first
+1. Open Cmd in folder you want to install project in...
+2. Type below Command and hit enter...
+```bash
+git clone https://github.com/Ruhin1/curd-laravel-10.git
+```
+4. Then cd into folder using below Command
+```bash
+cd curd-laravel-10
+```
+> Note from here On, You can also use Terminal from VS Code or Your IDE...
 
-## Learning Laravel
+### Install All Composer Dependencies
+1. Use below command to install all dependencies then wait till all process is complete...
+```bash
+composer install
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Create a .env file
+1. Duplicate *.env.example* as *.env* file
+2. Fill information of your DB **username** and **password** & other info if needed...
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Create DataBase
+1. Create DataBase by PhpMyadmin (provided by [Wamp](https://www.wampserver.com/en/)) or Any Other DB you use...
+> Note DataBase name should be same as typed in *.env* file
+### DataBase Structure
+> I recommend to import DB structure Using `php artisan` method but you can use *.sql* file to import if you want.
+1. Use below Command and wait till all migrations complete...
+```bash
+php artisan migrate
+```
+2. Use below Command to Link Storage to Public folder
+```bash
+php artisan storage:link
+```
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Serve Project
+1. Use below Command ( [Wamp](https://www.wampserver.com/en/)/Other Should be Runnig ) to run project...
+```bash
+php artisan serve
+```
+> if some *key* related error appears then use command `php artisan key:generate` to generate AppKey.
 
-## Laravel Sponsors
+I am writing this documentaion while this project is still in making, because I was bored...
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+I will add more soon, If my mind says, lol...
 
-### Premium Partners
+If You are still reading, then Thanks and Welcome...
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+Hope My project helps you any ways...
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
